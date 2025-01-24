@@ -72,6 +72,13 @@ isValidGrade(float value)
 int
 getInputs(float aGrades[])
 {
+   int i = 0; //start at first index
+   do
+   {
+      scanf("%f", &aGrades[i]); //gets input from user
+
+      i++;
+   }while(aGrades[i] > 0 && i < MAX-1);
 }
 
 /* This function displays the first n entries
